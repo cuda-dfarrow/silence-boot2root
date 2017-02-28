@@ -1,0 +1,246 @@
+    1  vim users.lst
+    2  apt-get vim
+    3  apt-get installvim
+    4  apt-get install vim
+    5  ifconfig
+    6  vim users.lst
+    7  apt-get install wpscan
+    8  apt-get install vmware-tools
+    9  aptitude search vmware
+   10  apt-get install xserver-xorg-video-vmware
+   11  cd /media/
+   12  ls
+   13  cd cdrom
+   14  ls
+   15  cd ../cdrom0/
+   16  ls
+   17  cd ..
+   18  mount /media/cdrom
+   19  cd cdrom
+   20  ls
+   21  ./vmware-tools-upgrader-64
+   22  cp VMwareTools-9.9.3-2759765.tar.gz ~/Downloads
+   23  cd ~/Downloads/
+   24  ls
+   25  tar xzfv VMwareTools-9.9.3-2759765.tar.gz 
+   26  ls
+   27  cd vmware-tools-distrib/
+   28  ls
+   29  ./vmware-install.pl 
+   30  aptitude search kernel
+   31  apt-get install linux-kernel-headers
+   32  apt-get update
+   33  apt-get install linux-headers
+   34  aptitude search li
+   35  apt-get install linux-headers-4.0.0-kali1-all
+   36  ls
+   37  ./vmware-install.pl 
+   38  cd Downloads/vmware-tools-distrib/
+   39  ls
+   40  ./vmware-install.pl 
+   41  ls
+   42  cd bin/
+   43  ./vmware-uninstall-tools.pl 
+   44  cd ..
+   45  ./vmware-install.pl 
+   46  shutdown -r now
+   47  ecit
+   48  exit
+   49  nc -l 7777 
+   50  ifconfig
+   51  ls .ssh
+   52  service sshd status
+   53  service sshd start
+   54  service sshd enable
+   55  service sshd status
+   56  ls
+   57  mkdir ~/.ssh
+   58  vim ~/.ssh/authorized_keys
+   59  ifconfig
+   60  apt-get install hydra
+   61  man hydra
+   62  hydra --help
+   63  hydra -l heffer -P pass_big.lst ftp://192.168.56.223:2020
+   64  wpscan -e --url http://192.168.52.223/
+   65  ifconfig
+   66  wpscan -e --url http://192.168.5.223/
+   67  wpscan -e --url http://192.168.5.223/bull/
+   68  wpscan -e --url http://192.168.56.223/bull/
+   69  cewl http://192.168.56.223/bull/ > ~/pass.lst
+   70  apt-get install cewl
+   71  cewl http://192.168.56.223/bull/ > ~/pass.lst
+   72  cat pass.lst 
+   73  cat users.lst >> pass.lst 
+   74  wpscan -u http://192.168.56.223/bull/ -w /root/pass.lst 
+   75  apt-get install john
+   76  john --word-list pass.lst --rules --stdout
+   77  man john
+   78  john --wordlist pass.lst --rules --stdout
+   79  john --wordlist:pass.lst --rules --stdout
+   80  john --wordlist:pass.lst --rules --stdout > pass_big.lst 
+   81  wpscan -u http://192.168.56.223/bull/ -w /root/pass_big.lst --threads 50
+   82  ifconfig
+   83  apt-get install armitage
+   84  armitage 
+   85  msfdb init
+   86  armitage 
+   87  cd ~/Downloads/Komodo-Edit-9.3.1-16424-linux-x86_64/
+   88  ls
+   89  ./install.sh 
+   90  export PATH="/root/Komodo-Edit-9/bin:$PATH"
+   91  komodo 
+   92  aptitude update 
+   93  aptitude update all
+   94  aptitude upgrade 
+   95  aptitude install apache
+   96  aptitude search apache
+   97  aptitude search mod_perl
+   98  aptitude search perl
+   99  aptitude search mod*perl
+  100  aptitude search mod-perl2
+  101  aptitude install libapache2-mod-perl2
+  102  aptitude install libapache2-mod-perl2-doc
+  103  cd /etc/apache2/
+  104  ls
+  105  vim apache2.conf 
+  106  ls conf-enabled/
+  107  ls conf-available/
+  108  ls mods-enabled/
+  109  cd /var/www/html/
+  110  ls
+  111  vim test.pl
+  112  aptitude search vim
+  113  aptitude install vim-scripts
+  114  aptitude install vim-perl
+  115  vim test.pl
+  116  aptitude install vim-gtk k
+  117  aptitude install vim-gtk
+  118  vim test.pl
+  119  vim ~/.vimrc
+  120  vim test.pl
+  121  ls
+  122  chmod +x test.pl 
+  123  ls -l
+  124  apt-get install apache2-dev libapreq2 libapache2-mod-perl2
+  125  aptitude fileroller
+  126  aptitude search fileroller
+  127  aptitude search xarchiver
+  128  aptitude install xarchiver
+  129  aptitude install gtk-2.0
+  130  aptitude search gtk
+  131  aptitude search gtk2
+  132  aptitude install libgtk2
+  133  aptitude install libgtk2.0
+  134  aptitude install libgtk2.0-common
+  135  aptitude install libgtk2.0-0
+  136  aptitude install libgtk2.0-doc libgtk2.0-cil libgtk2.0-bin
+  137  ls -l
+  138  cd templates/
+  139  ls
+  140  pwd
+  141  cpan install Template::Mustache
+  142  cpan install "Template::Mustache"
+  143  cpan install "Test::Mini::Unit"
+  144  cpan install 'CGI::Session'
+  145  cpan install 'DBI'
+  146  cpan install 'DBI::MySql'
+  147  cpan install 'DBI::mysql'
+  148  cpan install 'DBD::mysql'
+  149  aptitude search mysql-devel
+  150  aptitude search mysql
+  151  aptitude search mysql-client mysql-server
+  152  aptitude search mysql-client-5.5
+  153  aptitude install mysql-client mysql-server
+  154  cpan install 'DBD::mysql'
+  155  aptitude search mysql_config
+  156  aptitude provides mysql_config
+  157  aptitude files mysql_config
+  158  aptitude search libmysqlclient-dev
+  159  aptitude install libmysqlclient-dev
+  160  cpan install 'DBD::mysql'
+  161  aptitude search mysql
+  162  aptitude search mysql-admin
+  163  aptitude install mysql-workbench
+  164  service httpd start
+  165  service apache2 start
+  166  service apache2 status
+  167  cd /etc/apache2/
+  168  ls
+  169  vim conf-enabled/dwww.conf 
+  170  ls
+  171  vim sites-enabled/
+  172  service apache2 reload
+  173  service apache2 restart
+  174  service apache2 stop
+  175  service apache2 start
+  176  journalctl -xn
+  177  vim sites-enabled/000-default.conf 
+  178  service apache2 start
+  179  journalctl -xn
+  180  vim sites-enabled/000-default.conf 
+  181  service apache2 start
+  182  ls
+  183  ls mods-available/
+  184  ls mods-enabled/
+  185  ln mods-enabled/perl mods-available/perl
+  186  ln mods-available/perl mods-enabled/perl
+  187  ln mods-available/perl.load mods-enabled/perl.load
+  188  service apache2 start
+  189  service apache2 reload
+  190  vim sites-enabled/000-default.conf 
+  191  service apache2 reload
+  192  vim sites-enabled/000-default.conf 
+  193  service apache2 reload
+  194  ls
+  195  aptitude search caml
+  196  aptitude search perl*caml
+  197  aptitude search cpan*caml
+  198  cpan seach caml
+  199  cpan
+  200  tail -f /var/log/apache2/error.log 
+  201  mysql-workbench 
+  202  vmware-config-tools.pl 
+  203  shutdown -r now
+  204  vmware-config-tools.pl 
+  205  vmware-user 
+  206  ifconfig
+  207  ifconfig 
+  208  xfce4-terminal
+  209  aptitude update
+  210  apt-get clean all
+  211  apt-get update
+  212  aptitude update
+  213  aptitude upgrade
+  214  service mysql start
+  215  cpan install 'DATA::GUID'
+  216  cpan install 'Data::GUID'
+  217  aptitude verify xfce4-term
+  218  aptitude reinstall xfce4-terminal
+  219  ifconfig
+  220  service apache start
+  221  service apache2 start
+  222  tail /var/log/apache2/error.log 
+  223  tail /var/log/apache2/error.log -t
+  224  tail /var/log/apache2/error.log -f
+  225  cd ~/Downloads/
+  226  ls
+  227  cd vmware-tools-distrib/
+  228  ls
+  229  cd installer/
+  230  ls
+  231  cd ..
+  232  ./vmware-install.pl 
+  233  shutdown -r now
+  234  ./vmware-install.pl 
+  235  vmware-config-tools.pl 
+  236  shutdown -h now
+  237  vmware-uninstall-tools.pl 
+  238  shutdown -r now
+  239  ls /media/
+  240  mkdir /media/root/7E22C65B22C617D3/BTR_Silence/www
+  241  cp /var/www/html/ /media/root/7E22C65B22C617D3/BTR_Silence/www/
+  242  cp -rf /var/www/html/* /media/root/7E22C65B22C617D3/BTR_Silence/www/
+  243  cp /etc/apache2/sites-enabled/000-default.conf /media/root/7E22C65B22C617D3/BTR_Silence/
+  244  history 
+  245  history > /media/root/7E22C65B22C617D3/BTR_Silence/
+  246  history > /media/root/7E22C65B22C617D3/BTR_Silence/history.txt

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Music Manager</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    {{<head}}{{/head}}
+  </head>
+  <body>
+    <div class="mainCol">
+      {{<header}}{{/header}}
+      <div class="mainBox">
+        <div class="mediaBox">
+          <div class="mediaName">{{mediaUrl}}</div>
+          <audio class="mediaControl" autoplay="true" controls>
+            <source class="mediaSource" type="audio/mp3" src="{{mediaUrl}}" />
+          </audio>
+        </div>
+        <div class="dirListing">
+          <table>
+            <thead>
+              <tr>
+                <th class="colPlay">&nbsp;</th>
+                <th class="colName">Name</th>
+                <th class="colSize">Size</th>
+                <th class="colDate">Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#dirListing}}
+              <tr>
+                <td class="colPlay"><a href="index.pl?play={{Link}}"><img class="playIcon" src="images/play.png" alt="play" /></a></td>
+                <td class="colName">{{Name}}</td>
+                <td class="colSize">{{Size}}</td>
+                <td class="colDate">{{Date}}</td>
+              </tr>
+              {{/dirListing}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {{<footer}}{{/footer}}
+    </div>
+  </body>
+</html>

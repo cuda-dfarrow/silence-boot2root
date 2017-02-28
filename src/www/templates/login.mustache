@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Music Manager</title>
+    {{<head}}{{/head}}
+  </head>
+  <body>
+    <div class="mainCol">
+      {{<header}}{{/header}}
+      <div class="logonBox">
+        <form action="index.pl" method="post">
+          <span class=label>Username</span><input type="text" name="username" value="{{username}}" /><br/>
+          <span class=label>Password</span><input type="password" name="password" value="{{password}}" autocomplete="off" /><br/>
+          <span class=label>&nbsp;</span><input type="submit" name="login" value="Login" />
+          <input type="hidden" name="csrfToken" value="{{csrfToken}}" />
+        </form>
+      </div>
+      {{<footer}}{{/footer}}
+    </div>
+  </body>
+</html>

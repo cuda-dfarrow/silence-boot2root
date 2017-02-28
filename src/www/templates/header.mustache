@@ -1,0 +1,19 @@
+<div class="heading">
+    <div class="mainMenu">
+        {{#isAuth}}
+        <form id="peekAtForm" method="post">
+            Welcome: {{username}}
+            | <a href="./index.pl?logout=y">logout</a>
+            | peek at profile 
+            <select name="peekAt">
+                {{#peekOptions}}
+                <option value="{{Value}}" {{Selected}}>{{Name}}</option>
+                {{/peekOptions}}
+            </select>
+            <input type="submit" value="peek" />
+            <input type="hidden" name="csrfToken" value="{{csrfToken}}" />
+        </form> 
+        {{/isAuth}}
+    </div>
+    <h1>Simon &amp; Garfunkel Music Manager</h1>
+</div>

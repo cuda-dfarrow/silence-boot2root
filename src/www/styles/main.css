@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Nova Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('NovaMono'), url(https://fonts.gstatic.com/s/novamono/v7/pN6VVBY03b9QLz-7i6Kl0ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+}
+
+body {
+    background: url('/images/cat_background.jpg') no-repeat center center fixed;
+    background-color : #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #F9F9F9;
+    font-family: 'Nova Mono', monospace;
+}
+
+.mainCol {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(0,0,0,.6);
+    padding: 4px;
+}
+
+.mainMenu {
+    text-align: right;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.playIcon {
+    width: 16px;
+    height: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+a, a:visited, a:hover {
+    color: #CCDDFF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FFDDDD;
+}
+
+.dirListing {
+    background-color: rgba(255,255,255,.1);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dirListing .colPlay {
+    width: 30px;
+    padding-top: 5px;
+}
+
+.dirListing .colSize {
+    width: 60px;
+    text-align: center;
+}
+
+.dirListing .colName {
+    width: 500px;
+    text-align: left;
+}
+
+.dirListing .colDate {
+    width: 100px;
+    text-align: right;
+}
+
+.mediaBox {
+    text-align: center;
+    background-color: rgba(0,0,0,.6);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mediaControl {
+    display: inline-block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background: none;
+}
+
+.logonBox {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,.6);
+    padding: 10px;
+}
+
+.logonBox .label {
+    text-align: right;
+    padding-right: 10px;
+    display: inline-block;
+    width: 120px;
+}
